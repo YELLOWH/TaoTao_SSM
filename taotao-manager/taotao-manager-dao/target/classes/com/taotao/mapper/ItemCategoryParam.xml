@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.taotao.mapper.ItemCategoryParam" >
+
+  <resultMap id="BaseResultMap" type="com.taotao.pojo.TbItemParam" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="item_cat_id" property="itemCatId" jdbcType="BIGINT" />
+    <result column="param_data" property="paramData" jdbcType="VARCHAR" />
+    <result column="created" property="created" jdbcType="TIMESTAMP" />
+    <result column="updated" property="updated" jdbcType="TIMESTAMP" />
+  </resultMap>
+  
+  <select id="getItemCategoryParamById"  parameterType="java.lang.Long" resultMap="BaseResultMap">
+   select * from tb_item_param where item_cat_id=#{id}
+  </select>
+  
+   <insert id="addItemCategoryParam" parameterType="com.taotao.pojo.TbItemParam" >
+    insert into tb_item_param (item_cat_id, param_data, created,updated)
+    values ( #{itemCatId}, #{paramData}, #{created},#{updated})
+  </insert> 
+  
+     <insert id="addItem_paramitem" parameterType="com.taotao.pojo.TbItemParamItem" >
+    insert into tb_item_param_item (item_id, param_data, created,updated)
+    values ( #{itemId}, #{paramData}, #{created},#{updated})
+  </insert> 
+  
+</mapper>
