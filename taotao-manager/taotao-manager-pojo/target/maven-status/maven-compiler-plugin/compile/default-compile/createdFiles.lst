@@ -1,4 +1,5 @@
+com/taotao/pojo/TbItemParamItem.class
 com/taotao/pojo/TbItemCat.class
-com/taotao/pojo/TbItemParam.class
-com/taotao/pojo/TbItem.class
 com/taotao/pojo/TbItemDesc.class
+com/taotao/pojo/TbItem.class
+com/taotao/pojo/TbItemParam.class

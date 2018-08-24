@@ -1,5 +1,5 @@
-com/taotao/controller/ItemListController.class
-com/taotao/controller/ItemCategoryController.class
-com/taotao/controller/ItemController.class
-com/taotao/controller/IndexPageController.class
 com/taotao/controller/ImageUploadController.class
+com/taotao/controller/ItemCategoryController.class
+com/taotao/controller/IndexPageController.class
+com/taotao/controller/ItemListController.class
+com/taotao/controller/ItemController.class
