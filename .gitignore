@@ -1,3 +1,7 @@
+#myself add
+.metadata/*
+
+
 #Built application files
 *.apk
 *.ap_
