@@ -22,7 +22,7 @@ public class ItemController {
 	@ResponseBody//返回的是json字符串
 	TbItem getItemById(@PathVariable Long itemId){
 		
-		System.out.println("*******");
+		System.out.println("***+++测试git+++****");
 		
 		return itemService.getItemById(itemId);
 	}
