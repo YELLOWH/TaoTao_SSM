@@ -34,7 +34,7 @@ public class Pagehelpertest {
 		System.out.println(pageInfo.getPages());
 		
 	}
-	@Test
+	//@Test
 	public void testdate(){
 		System.out.println("***"+new Date());
 	}
